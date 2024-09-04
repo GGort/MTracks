@@ -7,8 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3add9fdd-9dac-4ee5-b3e6-75cfa132e86e" name="Changes" comment="audio device detection (in progress)">
-      <change afterPath="$PROJECT_DIR$/.github/dependabot.yml" afterDir="false" />
+    <list default="true" id="3add9fdd-9dac-4ee5-b3e6-75cfa132e86e" name="Changes" comment="add ecosystem">
+      <change beforePath="$PROJECT_DIR$/.github/dependabot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/dependabot.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725456109286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add dependabot check">
+      <option name="closed" value="true" />
+      <created>1725456872568</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725456872568</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +187,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working layout" />
     <MESSAGE value="audio device detection (in progress)" />
-    <option name="LAST_COMMIT_MESSAGE" value="audio device detection (in progress)" />
+    <MESSAGE value="Add dependabot check" />
+    <MESSAGE value="add ecosystem" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ecosystem" />
   </component>
 </project>
