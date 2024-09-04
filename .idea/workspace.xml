@@ -8,11 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3add9fdd-9dac-4ee5-b3e6-75cfa132e86e" name="Changes" comment="updates">
+      <change afterPath="$PROJECT_DIR$/src/routes/songs/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/songs/song/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/songs/song/edit/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/songs/song/edit/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src-tauri/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src-tauri/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/settings/audio/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/settings/audio/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +31,11 @@
         <option value="devices/+page" />
         <option value="audio/+page" />
         <option value="+layout" />
+        <option value="song/+page" />
+        <option value="edit/+page.svelte" />
+        <option value="+page" />
+        <option value="songs/+page" />
+        <option value="Rust File" />
       </list>
     </option>
   </component>
@@ -90,12 +100,13 @@
       <recent name="$PROJECT_DIR$/src-tauri" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes/songs" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src-tauri/test" />
       <recent name="$PROJECT_DIR$/src-tauri" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Cargo.Run">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package mtracks --bin mtracks" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -124,6 +135,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Cargo.Run" />
       <item itemvalue="npm.dev" />
     </list>
   </component>
@@ -147,6 +159,7 @@
       <updated>1725391604732</updated>
       <workItem from="1725391605916" duration="2937000" />
       <workItem from="1725438751394" duration="746000" />
+      <workItem from="1725467801234" duration="7129000" />
     </task>
     <task id="LOCAL-00001" summary="working layout">
       <option name="closed" value="true" />

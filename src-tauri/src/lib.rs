@@ -1,5 +1,8 @@
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
 
+mod settings;
+use crate::settings::*;
+
 use std::fs::File;
 use std::io::BufReader;
 use cpal::HostId;
@@ -12,7 +15,7 @@ use rodio::cpal::traits::{HostTrait, DeviceTrait};
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
-        .invoke_handler(tauri::generate_handler![play_test_sound, get_audio_devices, get_audio_hosts])
+        .invoke_handler(tauri::generate_handler![play_test_sound, get_audio_devices, get_audio_hosts, get_songs])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

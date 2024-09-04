@@ -15,6 +15,8 @@
     <div class="flex flex-row">
         <NavUl  {activeUrl}>
             <NavLi href="/" >Home</NavLi>
+            <NavLi href="/songs">Song</NavLi>
+            <NavLi href="/setLists">Set lists</NavLi>
             <NavLi class="cursor-pointer inline">settings<Icon class="inline"   inline icon="mdi:chevron-down" /></NavLi>
             <Dropdown class="w-44 z-20">
                 <DropdownItem href="/settings">General</DropdownItem>
@@ -27,5 +29,5 @@
     </div>
 </Navbar>
 
-<slot></slot>
+<slot/>
 </div>
