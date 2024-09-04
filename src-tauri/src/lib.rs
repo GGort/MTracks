@@ -2,6 +2,7 @@
 
 use std::fs::File;
 use std::io::BufReader;
+use cpal::HostId;
 use rodio::{Decoder, OutputStream, Sink, cpal};
 
 use rodio::cpal::traits::{HostTrait, DeviceTrait};
@@ -11,34 +12,66 @@ use rodio::cpal::traits::{HostTrait, DeviceTrait};
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
-        .invoke_handler(tauri::generate_handler![play_test_sound, get_audio_devices])
+        .invoke_handler(tauri::generate_handler![play_test_sound, get_audio_devices, get_audio_hosts])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
 
 
-    #[tauri::command]
-    async fn get_audio_devices() -> Vec<String> {
-        let hosts = cpal::available_hosts();
+#[tauri::command]
+async fn get_audio_hosts() -> Vec<String> {
+    let hosts = cpal::available_hosts();
 
-        for host in hosts {
-            let host_name = host.name();
-            println!("# Found Host: {}", host_name);
-        }
+    let mut result = Vec::new();
 
-        let host = cpal::default_host();
-        let devices = host.output_devices().unwrap();
-
-        let mut result = Vec::new();
-
-        for device in devices {
-            let dev_name = device.name().unwrap();
-
-            result.push(dev_name);
-        }
-
-        result
+    for host in hosts {
+        let host_name = host.name().into();
+        result.push(host_name);
     }
+
+    result
+}
+
+
+
+#[tauri::command]
+async fn get_audio_devices(host: String) -> Result<Vec<String>, String> {
+    // Match the input string to known HostId variants
+    // Match the input string to known HostId variants
+    let audio_host_id = match host.to_lowercase().as_str() {
+        #[cfg(target_os = "linux")]
+        "alsa" => HostId::Alsa,
+
+        #[cfg(target_os = "linux")]
+        "jack" => HostId::Jack,
+
+        #[cfg(target_os = "windows")]
+        "wasapi" => HostId::Wasapi,
+
+        #[cfg(target_os = "windows")]
+        "asio" => HostId::Asio,
+
+        #[cfg(target_os = "macos")]
+        "coreaudio" => HostId::CoreAudio,
+
+        _ => return Err(format!("Unsupported or unavailable audio host: {}", host)),
+    };
+
+    let audio_host = cpal::host_from_id(audio_host_id)
+        .map_err(|_| format!("Failed to get host for {}", host))?;
+    let devices = audio_host.output_devices()
+        .map_err(|_| "Failed to get output devices".to_string())?;
+
+    let mut result = Vec::new();
+    for device in devices {
+        let dev_name = device.name().unwrap_or_else(|_| "Unknown Device".to_string());
+
+        result.push(dev_name);
+    }
+
+    Ok(result)
+}
+
 
 #[tauri::command]
 async fn play_test_sound() {
