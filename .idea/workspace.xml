@@ -7,17 +7,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3add9fdd-9dac-4ee5-b3e6-75cfa132e86e" name="Changes" comment="updates">
-      <change afterPath="$PROJECT_DIR$/src/routes/songs/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/songs/song/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/songs/song/edit/+layout.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/songs/song/edit/+page.svelte" afterDir="false" />
+    <list default="true" id="3add9fdd-9dac-4ee5-b3e6-75cfa132e86e" name="Changes" comment="add song listing">
+      <change afterPath="$PROJECT_DIR$/src/lib/songs.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-tauri/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-tauri/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/songs/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/songs/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +20,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="devices/+page" />
         <option value="audio/+page" />
         <option value="+layout" />
@@ -36,6 +28,7 @@
         <option value="+page" />
         <option value="songs/+page" />
         <option value="Rust File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -106,7 +99,7 @@
       <recent name="$PROJECT_DIR$/src-tauri" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run">
+  <component name="RunManager" selected="Compound.Full Stack">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package mtracks --bin mtracks" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -124,6 +117,11 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Full Stack" type="CompoundRunConfigurationType">
+      <toRun name="Run" type="CargoCommandRunConfiguration" />
+      <toRun name="dev" type="js.build_tools.npm" />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -136,6 +134,7 @@
     </configuration>
     <list>
       <item itemvalue="Cargo.Run" />
+      <item itemvalue="Compound.Full Stack" />
       <item itemvalue="npm.dev" />
     </list>
   </component>
@@ -159,7 +158,7 @@
       <updated>1725391604732</updated>
       <workItem from="1725391605916" duration="2937000" />
       <workItem from="1725438751394" duration="746000" />
-      <workItem from="1725467801234" duration="7129000" />
+      <workItem from="1725467801234" duration="9619000" />
     </task>
     <task id="LOCAL-00001" summary="working layout">
       <option name="closed" value="true" />
@@ -201,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725457769128</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add song listing">
+      <option name="closed" value="true" />
+      <created>1725483520009</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725483520009</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +231,7 @@
     <MESSAGE value="Add dependabot check" />
     <MESSAGE value="add ecosystem" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="add song listing" />
+    <option name="LAST_COMMIT_MESSAGE" value="add song listing" />
   </component>
 </project>
