@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3add9fdd-9dac-4ee5-b3e6-75cfa132e86e" name="Changes" comment="add song listing">
+    <list default="true" id="3add9fdd-9dac-4ee5-b3e6-75cfa132e86e" name="Changes" comment="Update gitnore">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -157,7 +157,7 @@
       <workItem from="1725438751394" duration="746000" />
       <workItem from="1725467801234" duration="9619000" />
       <workItem from="1725534569954" duration="4665000" />
-      <workItem from="1725576413203" duration="103000" />
+      <workItem from="1725576413203" duration="165000" />
     </task>
     <task id="LOCAL-00001" summary="working layout">
       <option name="closed" value="true" />
@@ -207,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725483520009</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update gitnore">
+      <option name="closed" value="true" />
+      <created>1725576538980</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725576538980</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +239,7 @@
     <MESSAGE value="add ecosystem" />
     <MESSAGE value="updates" />
     <MESSAGE value="add song listing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add song listing" />
+    <MESSAGE value="Update gitnore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update gitnore" />
   </component>
 </project>
