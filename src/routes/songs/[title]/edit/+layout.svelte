@@ -1,12 +1,14 @@
 <script lang="ts">
     import {Input, Label, TabItem, Tabs} from "flowbite-svelte";
+    import {page} from '$app/stores';
+
 </script>
 
 <Tabs>
-    <TabItem open title="SongInfo" >
+    <TabItem open title="SongInfo">
         <Label>
-            Title:
-            <Input placeholder="Naam"/>
+            title:
+            <Input placeholder="Name" value={$page.params.title}/>
         </Label>
         <Label>
             Artist:
@@ -16,6 +18,6 @@
             BPM:
             <Input placeholder="BPM"/>
         </Label>
-        
+
     </TabItem>
 </Tabs>
