@@ -1,7 +1,27 @@
-# Tauri + SvelteKit + TypeScript
 
-This template should help get you started developing with Tauri, SvelteKit and TypeScript in Vite.
+# MTracks
 
-## Recommended IDE Setup
+MTracks is an app designed to make playing of MultiTracks easier and better through a simple UI and advanced features.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+- Local MultiTracks
+- Free to use
+
+## Authors
+
+- [@Gerjan Gort](https://www.github.com/ggort)
+- [@zVapor-Dev](https://github.com/zVapor-Dev)
+
+
+## Badges
+
+![GitHub Release](https://img.shields.io/github/v/release/GGort/MTrakcs)
+![GitHub contributors](https://img.shields.io/github/contributors/GGort/MTracks)
+
+
