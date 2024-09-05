@@ -13,12 +13,6 @@ MTracks is an app designed to make playing of MultiTracks easier and better thro
 - Local MultiTracks
 - Free to use
 
-## Authors
-
-- [@Gerjan Gort](https://www.github.com/ggort)
-- [@zVapor-Dev](https://github.com/zVapor-Dev)
-
-
 ## Badges
 
 ![GitHub Release](https://img.shields.io/github/v/release/GGort/MTrakcs)
