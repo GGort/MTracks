@@ -20,10 +20,10 @@ Please select the type of change you are making:
 If your change involves visual elements (e.g., UI changes, design updates, etc.), please upload screenshots or images of the changes made.
 
 ### Before:
-![Before Screenshot](URL)
+![Before Screenshot]
 
 ### After:
-![After Screenshot](URL)
+![After Screenshot]
 
 ## How to Use (Optional)
 
