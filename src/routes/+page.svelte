@@ -18,4 +18,7 @@
 </script>
 
 <h1>Home</h1>
-<Button on:click={()=>invoke('play_test_sound')}>play_test</Button>
+
+<Button href="/songs">Songs</Button>
+
+<Button on:click={()=>invoke('get_songs')}>test</Button>

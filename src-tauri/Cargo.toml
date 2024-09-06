@@ -1,4 +1,4 @@
-[package]
+        [package]
 name = "mtracks"
 version = "0.1.0"
 description = "A Tauri App"
@@ -20,5 +20,8 @@ tauri-plugin-shell = "2.0.0-rc"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 rodio = "0.19.0"
-cpal = { version = "0.15", features = ["jack"] }
+cpal = { version = "0.15", features = ["jack", "asio"] }
+dirs-next = "2.0.0"
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+
 
