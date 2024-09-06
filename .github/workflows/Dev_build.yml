@@ -15,12 +15,16 @@ jobs:
         include:
           - platform: 'macos-latest' # for Arm based macs (M1 and above).
             args: '--target aarch64-apple-darwin'
+            artifact-name: 'tauri-build-macos-arm'
           - platform: 'macos-latest' # for Intel based macs.
             args: '--target x86_64-apple-darwin'
+            artifact-name: 'tauri-build-macos-intel'
           - platform: 'ubuntu-22.04'
             args: ''
+            artifact-name: 'tauri-build-ubuntu'
           - platform: 'windows-latest'
             args: ''
+            artifact-name: 'tauri-build-windows'
 
     runs-on: ${{ matrix.platform }}
     steps:
@@ -63,6 +67,6 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: tauri-build-${{ matrix.platform }}
+          name: tauri-build-${{ matrix.artifact-name }}
           path: target/**/release/bundle/
           if-no-files-found: warn
