@@ -61,9 +61,9 @@ jobs:
           args: ${{ matrix.args }}
           includeDebug: true
 
-      # Add this step to upload the build artifacts
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
           name: tauri-build-${{ matrix.platform }}
-          path: src-tauri/target/release/bundle/
+          path: target/**/release/bundle/
+          if-no-files-found: warn
