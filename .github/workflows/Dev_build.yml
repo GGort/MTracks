@@ -48,6 +48,18 @@ jobs:
           # Those targets are only used on macos runners so it's in an `if` to slightly speed up windows and linux builds.
           targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
 
+      # Cache Rust dependencies
+      - name: Cache Rust cargo and target folders
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
+
       - name: Rust cache
         uses: swatinem/rust-cache@v2
         with:
@@ -56,6 +68,17 @@ jobs:
       - name: install frontend dependencies
         # If you don't have `beforeBuildCommand` configured you may want to build your frontend here too.
         run: yarn install # change this to npm or pnpm depending on which one you use.
+
+      # Cache the Tauri target directory for faster builds
+      - name: Cache Tauri target directory
+        uses: actions/cache@v4
+        with:
+          path: target/release
+          key: ${{ runner.os }}-tauri-target-${{ hashFiles('src-tauri/Cargo.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-tauri-target-
+
+
 
       - uses: tauri-apps/tauri-action@v0
         env:
