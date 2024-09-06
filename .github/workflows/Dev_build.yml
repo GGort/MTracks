@@ -2,9 +2,15 @@ name: 'Dev_build'
 
 on:
   workflow_dispatch:
-  push: {}
-#    branches:
-#      - release
+  pull_request_target:
+    types:
+      - opened
+    branches:
+      - release
+      - development
+  push:
+    branches:
+      - release
 
 jobs:
   publish-tauri:
@@ -62,7 +68,7 @@ jobs:
           includeDebug: true
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: tauri-build-${{ matrix.platform }}
           path: target/**/release/bundle/
