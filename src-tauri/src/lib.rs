@@ -11,26 +11,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-
-// Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-
 mod songs;
 mod settings;
 mod audio_devices;
 
 use crate::songs::*;
 use crate::audio_devices::*;
-
-
-
-
+use crate::settings::*;
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
-        .invoke_handler(tauri::generate_handler![play_test_sound, get_audio_devices, get_audio_hosts, get_songs, get_song])
+        .invoke_handler(tauri::generate_handler![
+            play_test_sound,
+            get_audio_devices,
+            get_audio_hosts,
+            get_songs,
+            get_song,
+            set_config_item,
+            get_config_item
+        ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

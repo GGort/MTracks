@@ -49,6 +49,8 @@
         isLoading_devices = false;
     }
 
+    console.log(invoke("get_config_item"));
+
     get_audio_host();
 
 </script>
