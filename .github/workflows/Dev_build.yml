@@ -1,4 +1,4 @@
-name: 'publish'
+name: 'Dev_build'
 
 on:
   workflow_dispatch:
@@ -60,3 +60,10 @@ jobs:
         with:
           args: ${{ matrix.args }}
           includeDebug: true
+
+      # Add this step to upload the build artifacts
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: tauri-build-${{ matrix.platform }}
+          path: src-tauri/target/release/bundle/
