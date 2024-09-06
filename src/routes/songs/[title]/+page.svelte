@@ -3,5 +3,5 @@
     import {page} from '$app/stores';
 
 </script>
-
-<Button href="/songs/{$page.params.title}/edit">Edit</Button>
+<h1>Song Edit Page - {$page.params.title}</h1>
+<!--<Button href="/songs/{$page.params.title}/edit">Edit</Button>-->

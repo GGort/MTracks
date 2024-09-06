@@ -1,4 +1,4 @@
-<script lang="ts">
+    <script lang="ts">
     import {Button, Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell} from "flowbite-svelte";
     import {invoke} from "@tauri-apps/api/core";
     import type {Song} from "$lib/songs";
