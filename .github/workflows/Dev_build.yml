@@ -1,4 +1,4 @@
-name: 'Dev_build'
+name: 'Build'
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - development
 
 jobs:
-  publish-tauri:
+  Build-tauri:
     permissions:
       contents: write
     strategy:
