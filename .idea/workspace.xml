@@ -7,9 +7,23 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3add9fdd-9dac-4ee5-b3e6-75cfa132e86e" name="Changes" comment="add ecosystem">
-      <change beforePath="$PROJECT_DIR$/.github/dependabot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/dependabot.yml" afterDir="false" />
+    <list default="true" id="3add9fdd-9dac-4ee5-b3e6-75cfa132e86e" name="Changes" comment="Rename Workflow">
+      <change afterPath="$PROJECT_DIR$/.github/pull_request_template.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CLA.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-tauri/build.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/build.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-tauri/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-tauri/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/settings/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/settings/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/settings/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/settings/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/settings/audio/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/settings/audio/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +47,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -68,7 +83,7 @@
     "Cargo.Run.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "git-widget-placeholder": "dependabot",
+    "git-widget-placeholder": "Licence",
     "last_opened_file_path": "/home/gerjan/GIT/MTracks/src-tauri",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,7 +107,7 @@
       <recent name="$PROJECT_DIR$/src-tauri" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Cargo.Run">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package mtracks --bin mtracks" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -178,7 +193,39 @@
       <option name="project" value="LOCAL" />
       <updated>1725456872568</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added status badge">
+      <option name="closed" value="true" />
+      <created>1725584070466</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725584070466</updated>
+    </task>
+    <task id="LOCAL-00006" summary="rename releases for apple-enz">
+      <option name="closed" value="true" />
+      <created>1725584826628</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725584826628</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Aditional build cashe">
+      <option name="closed" value="true" />
+      <created>1725585113654</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725585113654</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Rename Workflow">
+      <option name="closed" value="true" />
+      <created>1725586623487</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725586623487</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +236,11 @@
     <MESSAGE value="audio device detection (in progress)" />
     <MESSAGE value="Add dependabot check" />
     <MESSAGE value="add ecosystem" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ecosystem" />
+    <MESSAGE value="Fix branche select" />
+    <MESSAGE value="added status badge" />
+    <MESSAGE value="rename releases for apple-enz" />
+    <MESSAGE value="Aditional build cashe" />
+    <MESSAGE value="Rename Workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename Workflow" />
   </component>
 </project>
