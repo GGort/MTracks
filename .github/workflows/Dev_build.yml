@@ -1,16 +1,9 @@
 name: 'Dev_build'
 
 on:
-  workflow_dispatch:
-  pull_request_target:
-    types:
-      - opened
+  pull_request:
     branches:
-      - release
       - development
-  push:
-    branches:
-      - release
 
 jobs:
   publish-tauri:
