@@ -408,10 +408,10 @@
     svelte-hmr "^0.16.0"
     vitefu "^0.2.5"
 
-"@tauri-apps/api@>=2.0.0-rc.0", "@tauri-apps/api@^2.0.0-rc.4":
-  version "2.0.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-2.0.0-rc.4.tgz#2b4c3493d86382981787c52006c6c9e5bf16bc08"
-  integrity sha512-UNiIhhKG08j4ooss2oEEVexffmWkgkYlC2M3GcX3VPtNsqFgVNL8Mcw/4Y7rO9M9S+ffAMnLOF5ypzyuyb8tyg==
+"@tauri-apps/api@>=2.0.0-rc.0", "@tauri-apps/api@^2.0.0":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-2.1.1.tgz#77d4ddb683d31072de4e6a47c8613d9db011652b"
+  integrity sha512-fzUfFFKo4lknXGJq8qrCidkUcKcH2UHhfaaCNt4GzgzGaW2iS26uFOg4tS3H4P8D6ZEeUxtiD5z0nwFF0UN30A==
 
 "@tauri-apps/cli-darwin-arm64@2.0.0-rc.12":
   version "2.0.0-rc.12"
@@ -479,12 +479,12 @@
     "@tauri-apps/cli-win32-ia32-msvc" "2.0.0-rc.12"
     "@tauri-apps/cli-win32-x64-msvc" "2.0.0-rc.12"
 
-"@tauri-apps/plugin-shell@>=2.0.0-rc.0":
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@tauri-apps/plugin-shell/-/plugin-shell-2.0.0-rc.1.tgz#9facf3bbcedfa2de676cb4cfc703687377aa12a3"
-  integrity sha512-JtNROc0rqEwN/g93ig5pK4cl1vUo2yn+osCpY9de64cy/d9hRzof7AuYOgvt/Xcd5VPQmlgo2AGvUh5sQRSR1A==
+"@tauri-apps/plugin-shell@>=2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/plugin-shell/-/plugin-shell-2.2.0.tgz#3a52375457ae8358666ff80a968cc93d92573abf"
+  integrity sha512-iC3Ic1hLmasoboG7BO+7p+AriSoqAwKrIk+Hpk+S/bjTQdXqbl2GbdclghI4gM32X0bls7xHzIFqhRdrlvJeaA==
   dependencies:
-    "@tauri-apps/api" "^2.0.0-rc.4"
+    "@tauri-apps/api" "^2.0.0"
 
 "@types/cookie@^0.6.0":
   version "0.6.0"
