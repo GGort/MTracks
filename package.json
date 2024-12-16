@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@tauri-apps/api": ">=2.0.0-rc.0",
-    "@tauri-apps/plugin-shell": ">=2.0.0-rc.0"
+    "@tauri-apps/plugin-shell": ">=2.2.0"
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.0",
