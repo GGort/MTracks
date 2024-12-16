@@ -19,7 +19,7 @@ tauri = { version = "2.0.0-rc.10", features = [] }
 tauri-plugin-shell = "2.2.0"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-rodio = "0.19.0"
+rodio = "0.20.1"
 cpal = { version = "0.15", features = ["jack", "asio"] }
 dirs-next = "2.0.0"
 rusqlite = { version = "0.32.1", features = ["bundled"] }
