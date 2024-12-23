@@ -19,7 +19,7 @@
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.0",
     "@iconify/svelte": "^4.0.2",
-    "@sveltejs/adapter-static": "^3.0.1",
+    "@sveltejs/adapter-static": "^3.0.8",
     "@sveltejs/kit": "^2.11.1",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@tauri-apps/cli": ">=2.0.0-rc.12",
