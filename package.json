@@ -23,7 +23,7 @@
     "@sveltejs/kit": "^2.11.1",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@tauri-apps/cli": ">=2.0.0-rc.12",
-    "@types/node": "^22.10.1",
+    "@types/node": "^22.10.7",
     "autoprefixer": "^10.4.20",
     "flowbite": "^2.5.1",
     "flowbite-svelte": "^0.46.16",
